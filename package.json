@@ -1,6 +1,6 @@
 {
 	"name": "string-at",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Jordan Harband",
 	"description": "A robust & optimized ES3-compatible polyfill for the `String.prototype.at` proposal for ECMAScript 6/7 - based on https://mths.be/at",
 	"license": "MIT",
