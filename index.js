@@ -29,8 +29,8 @@ var atShim = function at(pos) {
 	return S.slice(position, position + len);
 };
 
-var at = bind.call(Function.call, atShim);
-define(at, {
+var boundAt = bind.call(Function.call, atShim);
+define(boundAt, {
 	method: atShim,
 	shim: function shimStringPrototypeAt() {
 		define(String.prototype, {
@@ -40,4 +40,4 @@ define(at, {
 	}
 });
 
-module.exports = at;
+module.exports = boundAt;
