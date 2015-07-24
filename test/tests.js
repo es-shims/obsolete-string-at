@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (at, t) {
 	t.test('string that starts with a BMP symbol', function (st) {
 		st.equal(at('abc\uD834\uDF06def', -Infinity), '');

@@ -1,3 +1,5 @@
+'use strict';
+
 var at = require('../');
 var test = require('tape');
 

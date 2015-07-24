@@ -1,3 +1,5 @@
+'use strict';
+
 require('es5-shim');
 require('es6-shim');
 var at = require('../');
@@ -20,16 +22,9 @@ test('shimmed', function (t) {
 		et.end();
 	});
 
-	var supportsStrictMode = (function () {
-		'use strict';
-
-		var fn = function () { return this === null; };
-		return fn.call(null);
-	}());
+	var supportsStrictMode = (function () { return typeof this === 'undefined'; }());
 
 	t.test('bad object/this value', { skip: !supportsStrictMode }, function (st) {
-		'use strict';
-
 		st.throws(function () { return String.prototype.at.call(undefined, 'a'); }, TypeError, 'undefined is not an object');
 		st.throws(function () { return String.prototype.at.call(null, 'a'); }, TypeError, 'null is not an object');
 		st.end();
