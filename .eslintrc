@@ -4,9 +4,11 @@
 	"extends": "@ljharb",
 
 	"rules": {
+		"id-length": [2, { "min": 1, "max": 30 }],
 		"max-nested-callbacks": [2, 3],
 		"max-statements": [2, 25],
 		"new-cap": [2, { "capIsNewExceptions": ["ToObject", "ToString", "ToInteger", "RequireObjectCoercible"] }],
-		"no-extra-parens": [2]
+		"no-extra-parens": [2],
+		"no-invalid-this": [1]
 	}
 }

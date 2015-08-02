@@ -5,7 +5,6 @@ var ES = require('es-abstract/es7');
 var bind = require('function-bind');
 
 var atShim = function at(pos) {
-	ES.RequireObjectCoercible(this);
 	var O = ES.ToObject(this);
 	var S = ES.ToString(O);
 	var position = ES.ToInteger(pos);
