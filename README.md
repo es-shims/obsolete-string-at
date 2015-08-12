@@ -45,7 +45,7 @@ assert(surrogatePair.at(0) === at(surrogatePair, 0));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/string-at
-[2]: http://vb.teelaun.ch/ljharb/string-at.svg
+[2]: http://versionbadg.es/ljharb/string-at.svg
 [3]: https://travis-ci.org/ljharb/string-at.svg
 [4]: https://travis-ci.org/ljharb/string-at
 [5]: https://david-dm.org/ljharb/string-at.svg
