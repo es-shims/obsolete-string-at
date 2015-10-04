@@ -7,8 +7,11 @@ at.shim();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
+
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var functionsHaveNames = function f() {}.name === 'f';
+
+var runTests = require('./tests');
 
 test('shimmed', function (t) {
 	t.equal(String.prototype.at.length, 1, 'String.prototype.at has a length of 1');
@@ -30,7 +33,7 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-	require('./tests')(Function.call.bind(String.prototype.at), t);
+	runTests(Function.call.bind(String.prototype.at), t);
 
 	t.end();
 });
