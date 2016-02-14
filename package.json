@@ -17,7 +17,8 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && npm run test:shimmed && npm run test:module && npm run security",
+		"test": "npm run lint && npm run tests-only && npm run security",
+		"tests-only": "npm run test:shimmed && npm run test:module",
 		"test:shimmed": "node --harmony --es-staging test/shimmed.js",
 		"test:module": "node --harmony --es-staging test/index.js",
 		"coverage": "covert test/*.js",
