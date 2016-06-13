@@ -1,6 +1,7 @@
 {
 	"rules": {
 		"max-nested-callbacks": [2, 3],
-		"max-statements": [2, 25]
+		"max-statements": [2, 25],
+		"max-statements-per-line": [2, { "max": 2 }]
 	}
 }
