@@ -32,9 +32,7 @@ var boundAt = bind.call(Function.call, atShim);
 define(boundAt, {
 	method: atShim,
 	shim: function shimStringPrototypeAt() {
-		define(String.prototype, {
-			at: atShim
-		});
+		define(String.prototype, { at: atShim });
 		return String.prototype.at;
 	}
 });
