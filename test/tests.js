@@ -91,10 +91,10 @@ module.exports = function (at, t) {
 	});
 
 	t.test('calling on `undefined`/`null`', function (st) {
-		st.throws(function () { at(); }, TypeError);
-		st.throws(function () { at(undefined, 4); }, TypeError);
-		st.throws(function () { at(null); }, TypeError);
-		st.throws(function () { at(null, 4); }, TypeError);
+		st['throws'](function () { at(); }, TypeError);
+		st['throws'](function () { at(undefined, 4); }, TypeError);
+		st['throws'](function () { at(null); }, TypeError);
+		st['throws'](function () { at(null, 4); }, TypeError);
 		st.end();
 	});
 
