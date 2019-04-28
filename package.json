@@ -60,7 +60,7 @@
 		"es6-shim": "^0.35.5",
 		"eslint": "^5.16.0",
 		"replace": "^1.1.0",
-		"semver": "^5.7.0",
+		"semver": "^6.0.0",
 		"tape": "^4.10.1"
 	},
 	"testling": {
