@@ -19,17 +19,14 @@
 	"scripts": {
 		"pretest": "npm run --silent lint",
 		"test": "npm run --silent tests-only",
-		"posttest": "npm run audit",
+		"posttest": "npx aud",
 		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node --harmony --es-staging test/shimmed.js",
 		"test:module": "node --harmony --es-staging test/index.js",
 		"coverage": "covert test/*.js",
 		"coverage-quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
-		"eccheck": "editorconfig-tools check *.js **/*.js > /dev/null",
-		"preaudit": "npm install --package-lock --package-lock-only",
-		"audit": "npm audit",
-		"postaudit": "rm package-lock.json"
+		"eccheck": "editorconfig-tools check *.js **/*.js > /dev/null"
 	},
 	"repository": {
 		"type": "git",
