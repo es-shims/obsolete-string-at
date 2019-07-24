@@ -17,14 +17,13 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"pretest": "npm run --silent lint",
-		"test": "npm run --silent tests-only",
+		"pretest": "npm run lint",
+		"test": "npm run tests-only",
 		"posttest": "npx aud",
 		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node --harmony --es-staging test/shimmed.js",
 		"test:module": "node --harmony --es-staging test/index.js",
 		"coverage": "covert test/*.js",
-		"coverage-quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
 		"eccheck": "eclint check *.js **/*.js > /dev/null"
 	},
