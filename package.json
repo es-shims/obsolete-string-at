@@ -57,8 +57,8 @@
 		"es6-shim": "^0.35.5",
 		"eslint": "^5.16.0",
 		"replace": "^1.1.0",
-		"semver": "^6.0.0",
-		"tape": "^4.10.1"
+		"semver": "^6.3.0",
+		"tape": "^4.11.0"
 	},
 	"testling": {
 		"files": "test.js",
