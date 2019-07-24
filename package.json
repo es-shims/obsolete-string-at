@@ -55,6 +55,7 @@
 		"es5-shim": "^4.5.13",
 		"es6-shim": "^0.35.5",
 		"eslint": "^5.16.0",
+		"functions-have-names": "^1.1.1",
 		"replace": "^1.1.0",
 		"semver": "^6.3.0",
 		"tape": "^4.11.0"
