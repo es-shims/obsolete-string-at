@@ -1,13 +1,15 @@
 'use strict';
 
 var define = require('define-properties');
-var ES = require('es-abstract/es7');
-var bind = require('function-bind');
+var ToInteger = require('es-abstract/2019/ToInteger');
+var ToObject = require('es-abstract/2019/ToObject');
+var ToString = require('es-abstract/2019/ToString');
+var callBind = require('es-abstract/helpers/callBind');
 
 var atShim = function at(pos) {
-	var O = ES.ToObject(this);
-	var S = ES.ToString(O);
-	var position = ES.ToInteger(pos);
+	var O = ToObject(this);
+	var S = ToString(O);
+	var position = ToInteger(pos);
 	var size = S.length;
 	if (position < 0 || position >= size) {
 		return '';
@@ -28,7 +30,7 @@ var atShim = function at(pos) {
 	return S.slice(position, position + len);
 };
 
-var boundAt = bind.call(Function.call, atShim);
+var boundAt = callBind(atShim);
 define(boundAt, {
 	method: atShim,
 	shim: function shimStringPrototypeAt() {
