@@ -28,7 +28,9 @@
 		"test:module": "node --harmony --es-staging test/index.js",
 		"coverage": "covert test/*.js",
 		"lint": "eslint .",
-		"eccheck": "eclint check *.js **/*.js > /dev/null"
+		"eccheck": "eclint check *.js **/*.js > /dev/null",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -53,6 +55,7 @@
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^14.1.0",
+		"auto-changelog": "^1.16.2",
 		"covert": "^1.1.1",
 		"eclint": "^2.8.1",
 		"es5-shim": "^4.5.13",
@@ -81,5 +84,12 @@
 	},
 	"engines": {
 		"node": ">= 0.4"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
 	}
 }
