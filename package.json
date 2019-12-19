@@ -54,15 +54,15 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^14.1.0",
+		"@ljharb/eslint-config": "^15.0.2",
 		"auto-changelog": "^1.16.2",
 		"covert": "^1.1.1",
 		"eclint": "^2.8.1",
 		"es5-shim": "^4.5.13",
 		"es6-shim": "^0.35.5",
-		"eslint": "^6.5.1",
-		"functions-have-names": "^1.1.1",
-		"tape": "^4.11.0"
+		"eslint": "^6.7.2",
+		"functions-have-names": "^1.2.0",
+		"tape": "^4.12.0"
 	},
 	"testling": {
 		"files": "test.js",
