@@ -56,8 +56,6 @@
 		"es6-shim": "^0.35.5",
 		"eslint": "^6.5.1",
 		"functions-have-names": "^1.1.1",
-		"replace": "^1.1.1",
-		"semver": "^6.3.0",
 		"tape": "^4.11.0"
 	},
 	"testling": {
