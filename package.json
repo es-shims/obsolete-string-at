@@ -54,8 +54,8 @@
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^16.0.0",
-		"aud": "^1.1.0",
-		"auto-changelog": "^1.16.4",
+		"aud": "^1.1.1",
+		"auto-changelog": "^2.0.0",
 		"covert": "^1.1.1",
 		"eclint": "^2.8.1",
 		"es5-shim": "^4.5.14",
