@@ -22,7 +22,7 @@
 	"scripts": {
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npx aud",
+		"posttest": "npx aud --production",
 		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node --harmony --es-staging test/shimmed.js",
 		"test:module": "node --harmony --es-staging test/index.js",
