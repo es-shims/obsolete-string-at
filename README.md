@@ -1,3 +1,7 @@
+**Note:** This proposal was not upstreamed into the ECMAScript specification! This repository is kept for historical purposes. Years later, in November 2020, [a distinct proposal](https://github.com/tc39/proposal-item-method) adds `String.prototype.at` with different semantics.
+
+Please use [`string.prototype.at`](https://www.npmjs.com/package/string.prototype.at) instead.
+
 # string-at <sup>[![Version Badge][2]][1]</sup>
 
 [![Build Status][3]][4]
